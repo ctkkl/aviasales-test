@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  flight_calculator:
+    container_name: flight_calculator
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - .:/var/www
+    ports:
+      - 80:80
+
+
